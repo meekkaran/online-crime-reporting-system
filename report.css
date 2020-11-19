@@ -1,0 +1,46 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*topbar*/
+#logo img{
+    width:20%;
+    padding:10px;
+}
+.topbar h1{
+    position: absolute;
+    left:35%;
+    top:5%;
+    font-size: 35px;
+}
+
+/*container*/
+.container{
+    position: absolute;
+    top:20%;
+    left:30%;
+}
+.top h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.top p{
+    margin-left: 150px;
+}
+
+/*form*/
+.input-group label{
+   display: block;
+   text-align: left;
+   margin: 5px;
+}
+.input-group input{
+   height:30px;
+   width:95%;
+}
+.btn{
+    padding: 10px;
+    margin-top: 10px;
+    background: grey;
+}
