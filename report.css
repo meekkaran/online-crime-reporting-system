@@ -1,46 +1,81 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: gray;
 }
+
+
 /*topbar*/
-#logo img{
-    width:20%;
-    padding:10px;
+
+#logo img {
+    width: 20%;
+    padding: 10px;
 }
-.topbar h1{
+
+.topbar h1 {
     position: absolute;
-    left:35%;
-    top:5%;
+    left: 35%;
+    top: 5%;
     font-size: 35px;
+    text-transform: uppercase;
+    color: brown;
 }
+
 
 /*container*/
-.container{
+
+.container {
     position: absolute;
-    top:20%;
-    left:30%;
-}
-.top h1{
-    font-size: 30px;
-    font-weight: bold;
-}
-.top p{
-    margin-left: 150px;
+    top: 20%;
+    left: 30%;
 }
 
+.top h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: brown;
+}
+
+.top p {
+    margin-left: 150px;
+    margin: 5px;
+    font-size: 25px;
+    color: brown;
+}
+
+
 /*form*/
-.input-group label{
-   display: block;
-   text-align: left;
-   margin: 5px;
+
+.input-group select {
+    text-align: left;
+    margin: 5px;
+    width: 95%;
+    height: 30px;
+    color: blueviolet;
 }
-.input-group input{
-   height:30px;
-   width:95%;
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin: 5px;
+    color: rgb(92, 26, 199);
 }
-.btn{
+
+.input-group input {
+    height: 30px;
+    width: 95%;
+    margin: 5px;
+    color: black;
+}
+
+.input-group textarea {
+    margin: 5px;
+}
+
+.btn {
     padding: 10px;
+    margin: 5px;
     margin-top: 10px;
-    background: grey;
+    background: aqua;
 }
