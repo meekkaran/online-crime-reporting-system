@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>report incidence</title>
     <link rel="stylesheet" href="report.css">
 </head>
+
 <body>
 
     <div class="topbar">
         <div id="logo">
             <img src="./img/cuff.png">
-            <h1><span class= "highlight">Report </span>Crimes</h1>
+            <h1><span class="highlight">Report </span>Crimes</h1>
         </div>
-        </div>
+    </div>
 
 
     <div class="container">
@@ -21,27 +23,60 @@
             <h1>Report incidence</h1>
             <p>Incident Reporting Form</p>
         </div>
-        <form>
+        <form action="/action_page.php" onsubmit="myFunction()">
             <div class="input-group">
-                <label>TYPE OF INCIDENT</label>
-                <input type="text" name="">
+                <select id="Station Selection">
+                    <option value="1">Select Station to report the case</option>
+                    <option value="2">Makupa</option>
+                    <option value="3">Chaani</option>
+                    <option value="4">Ongata</option>
+                    <option value="5">Langata Baracks</option>
+                    <option value="6">Westlands</option>
+                    <option value="7">Docks</option>
+                </select>
+
             </div>
             <div class="input-group">
-                <label>DATE</label>
-                <input type="text" name="date">
+                <select id="Case category">
+                    <option value="1">Select Case Category</option>
+                    <option value="2">Theft</option>
+                    <option value="3">Wanted</option>
+                    <option value="4">Assault</option>
+                    <option value="5">Robbery</option>
+                    <option value="6">Domestic Violence/Rape</option>
+                    <option value="7">Miscallenous</option>
+                </select>
+
+            </div>
+
+            <div class="input-group">
+                <label>Date:</label>
+                <input type="date" name="date">
             </div>
             <div class="input-group">
-                <label>TIME</label>
-                <input type="text" name="time">
+                <label>Time:</label>
+                <input type="time" name="time">
+            </div>
+            <div class=input-group>
+                <label>Male</label><br/>
+                <input type="radio" name="gender" value="male">
+                <label>Female</label>
+                <input type="radio" name="gender" value="female">
             </div>
             <div class="input-group">
-                <label>BRIEF DESCRIPTION ABOUT INCIDENT</label>
-                <input type="text" name="descrbe" class="describe">
+                <label>Brief Description A bout The Incident</label>
+                <textarea type="text" name="descrbe" class="describe" rows="10" cols="54"></textarea>
             </div>
             <div class="input-group">
                 <button type="submit" name="submit" class="btn">SUBMIT</button>
             </div>
         </form>
-    </div>  
+        <script>
+            function myFunction() {
+                alert("Your case has been recorded and submitted successfully");
+            }
+        </script>
+    </div>
 </body>
+
 </html>
